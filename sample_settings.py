@@ -1,5 +1,5 @@
-SRC_BB_USERNAME = 'bitbucket'
-SRC_BB_PASSWORD = 'ohlongjohnson'
+SRC_AC_USERNAME = 'bitbucket'
+SRC_AC_PASSWORD = 'ohlongjohnson'
 IMPORTER_BB_USERNAME = 'bitbucket'
 IMPORTER_BB_PASSWORD = 'ohlongjohnson'
 IMPORTER_ID = '007007'
