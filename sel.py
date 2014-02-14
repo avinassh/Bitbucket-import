@@ -27,8 +27,9 @@ seed_url = 'https://bitbucket.org/api/2.0/repositories/virtuallabs'
 response = make_rest_call(seed_url)
 urls = []
 
-if "next" in response.keys():
-	for repo in response["values"]:
-		print repo['links']['html']['href']
-		#break
-		#print repo['self']
+while('next' in response.keys()):
+	for repo in response['values']:
+		urls.append(repo['links']['html']['href'])
+	response = make_rest_call(response['next'])
+
+print urls
